@@ -1,6 +1,6 @@
 module "vpc" {
-    source = "../terraform-vpc-module"
-    # source = "git::https://github.com/srikanth-suthari/terraform-vpc-module.git?ref=main" #by default it takes main
+    # source = "../terraform-vpc-module"
+    source = "git::https://github.com/srikanth-suthari/terraform-vpc-module.git?ref=main" #by default it takes main
 
     vpc_cidr = var.vpc_cidr
     project_name = var.project_name
